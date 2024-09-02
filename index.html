@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <!-- configurações de estilo ensinados na aula 4-->
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+            margin-top: 20px;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506E6A;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+            background-color: rgb(85, 168, 89); 
+            font-family: Verdana;
+        }
+
+        .imagem_leo {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: justify;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #506E6A;
+            color: white;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #506E6A;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #506E6A 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #506E6A;
+            color: white;
+        }
+
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_leo {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+        .centered-image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- menu de Links externos para as outras páginas.-->
+    <nav class="container menu">
+        <ul>
+            <a href="index.html">Sobre mim</a>
+            <a href="academic.html">Formação Acadêmica</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contato.html">Contato</a>
+        </ul>
+    </nav>
+
+    <!-- Header-->
+    <header class="container">
+        <h1 style="color: rgb(55, 172, 113); text-align: center;">Sobre mim.</h1>
+    </header>
+
+    <!-- Conteúdo-->
+    <section class="principal">
+        <p>Sou um jovem de 20 anos que estuda Análise e Desenvolvimento de Sistemas, estou no segundo período. Eu sou bom em estudar e aprendo rápido, meu maior defeito é a procrastinação e perfeccionismo. O que eu mais gosto é de assistir séries, a última que eu vi foi Chernobyl (2019), muito boa!</p>
+    </section>
+
+    <!-- Imagem da página-->
+    <div class="container wrapper">
+        <img src="images/chernobyl.jpg" alt="chernobyl_serie" width="70%" class="centered-image">
+    </div>
+
+    <!-- Container no final-->
+    <div>
+        <footer class="container">
+            <h1>Desenvolvido para fins educacionais</h1>
+        </footer>
+    </div>
+</body>
+</html>
